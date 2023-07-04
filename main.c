@@ -118,7 +118,7 @@ int main(int argc, char const *argv[])
 	}
 	sensor *SensorS = (sensor *)malloc(n*sizeof(sensor)); //vector that stores the sensors acoording to pmu priority
 	int k = 0;
-	//making a copy of the original vector , placing the pmu's first
+	//making a copy of the original vector , placing the pmus first
 	for (int i = 0 ; i < n ; i++) {
 		if (Sensor[i].sensor_type == PMU) {
 			SensorS[k].sensor_type = PMU;
